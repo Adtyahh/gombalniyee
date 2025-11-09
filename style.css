@@ -19,7 +19,7 @@ body {
     width: 90%; 
     max-width: 500px; 
     padding: 30px; 
-    position: relative;
+    position: relative; 
 }
 
 h1 {
@@ -63,7 +63,7 @@ button {
 #btn-nggak {
     background-color: #f44336;
     color: white;
-    position: absolute;
+    position: absolute; 
 }
 
 @media (max-width: 480px) {
@@ -84,6 +84,10 @@ button {
         padding: 10px 20px;
     }
 
+    .buttons {
+        flex-direction: column; 
+    }
 
+    #btn-nggak {
+    }
 }
-
