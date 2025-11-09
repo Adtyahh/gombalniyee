@@ -2,7 +2,6 @@ const btnIya = document.getElementById('btn-iya');
 const btnNggak = document.getElementById('btn-nggak');
 const pesanCinta = document.getElementById('pesan-cinta');
 const pertanyaan = document.getElementById('pertanyaan');
-
 const container = document.querySelector('.container');
 
 btnIya.addEventListener('click', function() {
@@ -12,8 +11,7 @@ btnIya.addEventListener('click', function() {
     btnNggak.style.display = 'none';
 });
 
-btnNggak.addEventListener('mouseover', function() {
-   
+function pindahkanTombol() {
     const containerWidth = container.clientWidth;
     const containerHeight = container.clientHeight;
 
@@ -26,4 +24,11 @@ btnNggak.addEventListener('mouseover', function() {
 
     btnNggak.style.top = newTop + 'px';
     btnNggak.style.left = newLeft + 'px';
+}
+
+btnNggak.addEventListener('mouseover', pindahkanTombol);
+
+btnNggak.addEventListener('touchstart', function(e) {
+    e.preventDefault(); // <-- Ini penting
+    pindahkanTombol();
 });
