@@ -83,12 +83,5 @@ button {
         padding: 10px 20px;
     }
 
-    .buttons {
-        flex-direction: column; 
-    }
 
-    #btn-nggak {
-        position: relative; 
-        
-    }
 }
